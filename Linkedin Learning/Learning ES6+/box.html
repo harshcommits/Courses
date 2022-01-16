@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>ECMAScript</title>
+    <style>
+        #box {
+            display: flex;
+            justify-content: space-around;
+        }
+        #box > div {
+            height: 5em;
+            width: 5em;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let</h1>
+    <div id="box"></div>
+    <script type="text/javascript">
+        var div;
+        var box = document.getElementById("box");
+        //using let for i instead allows block to have values assigned; prints 0-4 instead of all printing 5
+        for (let i=0; i<5; i++) {
+            div = document.createElement("div");
+            div.onclick = function() {
+                alert("this is a box #" + i);
+            }
+            box.appendChild(div)
+        }
+
+    </script>
+</body>
