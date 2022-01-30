@@ -1,8 +1,8 @@
 package classrun;
 
 import java.text.NumberFormat;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
+
 import model.ClothingItem; //this requires import since it's in a different package
 import model.ClothingSize;
 import model.Hat;
@@ -53,34 +53,64 @@ public class Main {
         System.out.println("The result is : " + result);
         end calculator segment */
 
-        //section for the imported clothing items data
+        //section for the imported clothing items data; importing arraylist, map from collections framework
+        List<String> colors = new ArrayList<>();
+        colors.add("Red");
+        colors.add("Green");
+        colors.add("Blue");
+        /*
         String[] colors = new String[3];
         colors[0] = "Red";
         colors[1] = "Green";
         colors[2] = "Blue";
+         */
         for (var color: colors) {
             System.out.println(color);
         }
 
-        ClothingItem[] items = {
-                new Shirt(ClothingSize.L, //declared as separate enum; type parameter declared in inherited shirt class
-                        29.33,
-                        2),
-                new Hat(ClothingSize.M,
-                        23.0,
-                        1)
-        };
-        //var shirt =
+        //declaring items as ArrayList
+        /*
+        List<ClothingItem> items = new ArrayList<>();
+        items.add(new Shirt(ClothingSize.L, //declared as separate enum; type parameter declared in inherited shirt class
+                29.33,
+                2));
+        items.add(new Hat(ClothingSize.M,
+                23.0,
+                1));
+
+        //loop through values
+        for (ClothingItem item: items) {
+            displayItemDetails(item);
+        }
+        */
+
+        //declaring values using Map
+        Map<String, ClothingItem> items = new HashMap<>();
+        items.put("shirt", new Shirt(ClothingSize.L, //declared as separate enum; type parameter declared in inherited shirt class
+                29.33,
+                2));
+        items.put("hat", new Hat(ClothingSize.M,
+                23.0,
+                1));
+
+        //get an item from Map declaration
+        /*
+        var anItem = items.get("hat");
+        displayItemDetails(anItem);
+         */
+
+        //loop through map items
+        var keys = items.keySet();
+        for (String key: keys) {
+            var item = items.get(key);
+            displayItemDetails(item);
+        }
         /*
         item.setType("Shirt");
         item.setSize("M");
         item.setPrice(29.33);
         item.setQuantity(2);
         */
-        for (ClothingItem item: items
-             ) {
-            displayItemDetails(item);
-        }
 
     }
 
