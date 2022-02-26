@@ -1,6 +1,0 @@
-Countries:
-
-India
-UK
-Japan
-Australia
