@@ -3,6 +3,7 @@ class DrawingAPIOne(object):
      def draw_circle(self, x, y, radius):
           print(f"API 1 drawing a circle at {x}, {y} with radius {radius}")
 
+
 class DrawingAPITwo(object):
      """Implementation-specific abstraction: concrete class two"""
 
@@ -28,9 +29,11 @@ class Circle(object):
           """Implementation-independent"""
           self._radius *= percent
 
+
 #Build the first circle object
 circle1 = Circle(1, 2, 3, DrawingAPIOne())
 circle1.draw()
+
 
 #Build the other circle object
 circle2 = Circle(2, 3, 4, DrawingAPITwo())
