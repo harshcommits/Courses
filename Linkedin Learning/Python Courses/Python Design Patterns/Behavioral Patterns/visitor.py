@@ -38,3 +38,5 @@ e = Electrician()   #create electrician
 
 home = House()
 home.accept(hv)
+
+home.accept(e)
