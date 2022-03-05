@@ -1,3 +1,7 @@
 package main
 
-Print("Hello World")
+import "fmt"
+
+func main() {
+	fmt.Print("Hello World")
+}
