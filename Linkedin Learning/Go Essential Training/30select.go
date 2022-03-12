@@ -29,7 +29,7 @@ func main() {
 	select {
 	case val := <-out:
 		fmt.Printf("got %f\n", val)
-	case <-time.After(200 * time.Millisecond):
+	case <-time.After(200 * time.Millisecond): //time.After pushes to channel
 		fmt.Println("timeout")
 	}
 
