@@ -8,4 +8,3 @@ spec:
   containers:
   - name: web
     image: nginx:1.17.1
-  
