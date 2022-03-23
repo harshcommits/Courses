@@ -7,5 +7,5 @@ const backpack = {
     open: false
 }
 
-console.log(backpack.color);
-console.log(backpack['cost']);
+console.log(backpack.color); // using dot notation
+console.log(backpack['cost']); //using bracketss
