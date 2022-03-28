@@ -8,4 +8,4 @@ const backpack = {
 }
 
 console.log(backpack.color); // using dot notation
-console.log(backpack['cost']); //using bracketss
+console.log(backpack['cost']); //using brackets
