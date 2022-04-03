@@ -1,17 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+let city = {
+  name: "Madrid",
+  country: "Spain"
+}
+
+function Hello(props) {
+  console.log(Object.keys(props));
+  return (
+  <div>
+    <h1 id="heading">Welcome to {props.library}!</h1>
+    <p>{props.message}</p>
+    <p>{props.number}</p>
+  </div>
+  );
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  /*
+  React.createElement(
+    "h2", {style: { color: "blue" } }, "Hello!"
+    */
+   /*
+   <h1 id="heading">Hello from {city.name}!</h1> //heading id allows using color change css used in index.html
+   */
+  <Hello 
+    library="React" 
+    message="Have fun!"
+    number={3}
+    />,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
