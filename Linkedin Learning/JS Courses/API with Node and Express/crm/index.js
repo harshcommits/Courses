@@ -17,7 +17,10 @@ mongoose.connect('mongodb://localhost/CRMdb', {
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-routes(app)
+routes(app);
+
+//serving static files from folder; don't add files that execute code (security issues)
+app.use(express.static('public')) //can use to display jpeg file on localhost:4000/sky.jpeg
 
 app.get('/', (req, res) => 
     res.send(`Node and Express server running on port ${PORT}`)
