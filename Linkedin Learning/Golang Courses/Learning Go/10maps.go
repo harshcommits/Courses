@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func main() {
@@ -14,6 +15,21 @@ func main() {
 
 	for k, v := range states {
 		fmt.Printf("%v: %v\n", k, v)
+	}
+
+	keys := make([]string, len(states))
+	i := 0
+	for k := range states {
+		keys[i] = k
+		i++
+	}
+	fmt.Println(keys)
+	sort.Strings(keys)
+	fmt.Println("keys: ", keys)
+
+	//print states
+	for i := range keys {
+		fmt.Println(states[keys[i]])
 	}
 
 	delhi := states["DL"]
