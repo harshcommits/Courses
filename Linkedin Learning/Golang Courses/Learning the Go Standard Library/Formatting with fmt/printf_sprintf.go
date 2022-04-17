@@ -7,4 +7,7 @@ type circle struct {
 
 func main() {
 
+	x := 20
+	f := 123.45
+
 }
