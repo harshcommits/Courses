@@ -15,5 +15,10 @@ func main() {
 	for _, ch := range s {
 		fmt.Print(string(ch), ",")
 	}
+	fmt.Print("\n")
+
+	//using operators < > == !=
+	fmt.Println("dog" < "cat") //false; since c before d
+	fmt.Println("dog" < "horse")
 
 }
