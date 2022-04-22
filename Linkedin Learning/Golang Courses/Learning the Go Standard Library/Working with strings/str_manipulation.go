@@ -30,4 +30,8 @@ func main() {
 	}
 	fmt.Printf("%q\n", strings.FieldsFunc(s3, f))
 
+	//replacer to replace data in string
+	rep := strings.NewReplacer(".", "|", ",", "|", "!", "|") //replace . , ! with |
+	fmt.Println(rep.Replace(s3))
+
 }
