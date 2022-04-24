@@ -31,4 +31,18 @@ func main() {
 	s = newurl.String()
 	fmt.Println(s)
 
+	//modify URL components
+	newurl.Host = "joemarini.com"
+	s = newurl.String()
+	fmt.Println(s)
+
+	//create new values struct and encode it as query string
+	newvals := url.Values{}
+	newvals.Add("x", "100")
+	newvals.Add("z", "somestr")
+
+	newurl.RawQuery = newvals.Encode() //generates the query string; x=100&z=somestr
+	s = newurl.String()
+	fmt.Println(s)
+
 }
