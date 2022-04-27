@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a982f7de-3cbd-4b47-9dce-a0a9e3d97bbe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich.xcodeproj/project.pbxproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich.xcodeproj/project.xcworkspace/xcuserdata/harshjha.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich.xcodeproj/xcuserdata/harshjha.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/AppDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Assets.xcassets/AccentColor.colorset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Base.lproj/Main.storyboard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/SceneDelegate.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/ViewController.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28KeEGsC3PaIPO8OuCPQrpd6ZwU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a982f7de-3cbd-4b47-9dce-a0a9e3d97bbe" name="Changes" comment="" />
+      <created>1650969590871</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650969590871</updated>
+    </task>
+    <servers />
+  </component>
+</project>
