@@ -12,8 +12,7 @@ obj = ImmutableClass()
 print(obj.value1)
 
 #trying to change value
-# obj.value1 = "Another string" #gives frozeninstance error
-# print(obj.value1) 
+# obj.value1 = "Another string" #gives frozeninstance error 
 
 #even using class methods doesn't change values
 obj.somefunc(30) #gives same error as previous
