@@ -32,13 +32,14 @@ if __name__ == "__main__":
                     port="5432")
 
     order_num = int(input("Enter Order Number"))
-    order_type = int(input("Enter Order Number"))
-    cust_name = int(input("Enter Order Number"))
-    prod_number = int(input("Enter Order Number"))
-    order_num = int(input("Enter Order Number"))
-    order_num = int(input("Enter Order Number"))
-    order_num = int(input("Enter Order Number"))
+    order_type = int(input("Enter Order Type"))
+    cust_name = int(input("Enter Customer Name"))
+    prod_number = int(input("Enter Product Number"))
+    prod_name = int(input("Enter Product Name"))
+    price = int(input("Enter Price"))
+    discount = int(input("Enter Discount"))
 
     insert_sale(conn)
+    print("Data inserted")
 
     conn.close()
