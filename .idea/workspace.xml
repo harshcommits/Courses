@@ -3,28 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a982f7de-3cbd-4b47-9dce-a0a9e3d97bbe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Flask Essential Training/url-shortener/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Flask Essential Training/url-shortener/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/10magic_str.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/11magic_comparison.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/12attribute_access.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/13magic_call.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/14data_class.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/15post_initialization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/16default_values.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/17immutable_class.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/1class-definition.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/2instance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/3type_check.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/4methods.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/5inheritance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/6abstract_class.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/7multi-inheritance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/8interface.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python Object Oriented Programming/9composition.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich.xcodeproj/project.xcworkspace/xcuserdata/harshjha.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich.xcodeproj/project.xcworkspace/xcuserdata/harshjha.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Udemy/iOS Projects/I am Rich/I am Rich/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Youtube/Springboot Course - Amigoscode/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Youtube/Springboot Course - Amigoscode/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Youtube/Springboot Course - Amigoscode/demoapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Youtube/Springboot Course - Amigoscode/demoapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python OOP/5inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Linkedin Learning/Python Courses/Python OOP/5inheritance.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +24,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
