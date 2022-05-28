@@ -24,7 +24,7 @@ class Job:
                self.pages -= 1
 
      def check_complete(self):
-          if self.pages = 0:
+          if self.pages == 0:
                return True
           return False
 

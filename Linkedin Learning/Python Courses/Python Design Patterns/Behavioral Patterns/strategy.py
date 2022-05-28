@@ -13,8 +13,10 @@ class Strategy:
      def execute(self):
           print(f"{self.name} is being used.")
 
+
 def strategy_one(self):
      print(f"{self.name} is used to execute method 1")
+
 
 def strategy_two(self):
      print(f"{self.name} is used to execute method 2")

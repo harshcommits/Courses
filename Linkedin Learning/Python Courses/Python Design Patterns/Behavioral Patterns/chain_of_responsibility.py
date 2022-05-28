@@ -12,9 +12,10 @@ class Handler:
      def _handle(self, request):
           raise NotImplemented('Must provide implementation in sub-classes')
 
+
 class ConcreteHandler1(Handler):
-     """Concrete Handler 1"""
-     def _handle(self, request):
+   """Concrete Handler 1"""
+   def _handle(self, request):
           if 0 < request < 10:
                print(f"Request {request} handled properly")
                return True
