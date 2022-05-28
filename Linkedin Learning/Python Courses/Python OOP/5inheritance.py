@@ -4,11 +4,13 @@ class Publication:
         self.title = title
         self.price = price
 
+
 class Periodical(Publication):
     def __init__(self, title, price, publisher, period):
         super().__init__(title, price)
         self.period = period
         self.publisher = publisher
+
 
 class Book(Publication): #inherits from publication
     def __init__(self, title, author, pages, price):
@@ -16,13 +18,16 @@ class Book(Publication): #inherits from publication
         self.author = author
         self.pages = pages
 
+
 class Magazine(Periodical):
     def __init__(self, title, publisher, price, period):
         super().__init__(title, price, publisher, period)
 
+
 class Newspaper(Periodical):
     def __init__(self, title, publisher, price, period):
         super().__init__(title, publisher, price, period)
+
 
 b1 = Book("Brave New World", "Aldous Huxley", 311, 29.0)
 n1 = Newspaper("NY Times", "New York Times Company", 6.0, "Daily")
