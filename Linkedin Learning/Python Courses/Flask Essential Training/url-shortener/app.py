@@ -4,7 +4,7 @@ import os.path
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-app.secret_key = 'sjdflsdkjf'  # required for adding flash messages; for security reasons
+app.secret_key = 'thisisasecret'  # required for adding flash messages; for security reasons
 
 
 @app.route('/')
