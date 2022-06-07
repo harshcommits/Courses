@@ -1,4 +1,4 @@
-#define base class
+# define base class
 class Publication:
     def __init__(self, title, price):
         self.title = title
@@ -12,7 +12,7 @@ class Periodical(Publication):
         self.publisher = publisher
 
 
-class Book(Publication): #inherits from publication
+class Book(Publication): # inherits from publication
     def __init__(self, title, author, pages, price):
         super().__init__(title, price)
         self.author = author
@@ -31,7 +31,7 @@ class Newspaper(Periodical):
 
 b1 = Book("Brave New World", "Aldous Huxley", 311, 29.0)
 n1 = Newspaper("NY Times", "New York Times Company", 6.0, "Daily")
-m1 = Magazine("Scientefic American", "Springer Nature", 5.99, "Monthly")
+m1 = Magazine("Scientific American", "Springer Nature", 5.99, "Monthly")
 
 print(b1.author)
 print(n1.title)
