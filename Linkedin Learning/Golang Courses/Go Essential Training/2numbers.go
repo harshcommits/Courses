@@ -12,7 +12,6 @@ func main() {
 
 	//multiple additions
 	x, y := 2, 4
-
 	z := x + y
 
 	fmt.Printf("The sum is %v, with type %T", z, z)
