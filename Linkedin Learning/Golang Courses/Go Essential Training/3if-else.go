@@ -5,9 +5,7 @@ import (
 )
 
 func main() {
-
 	//adding if else
-
 	x := 10
 
 	if x < 5 {

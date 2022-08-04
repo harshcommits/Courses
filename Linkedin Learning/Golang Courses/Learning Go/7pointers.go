@@ -6,7 +6,7 @@ import (
 
 func main() {
 	anInt := 42
-	var p = &anInt
+	var p = &anInt //p is the address for &anInt, where the value is stored
 	fmt.Println("Value of p: ", *p)
 
 	value1 := 42.13
