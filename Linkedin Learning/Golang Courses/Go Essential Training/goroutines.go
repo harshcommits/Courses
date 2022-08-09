@@ -26,7 +26,7 @@ func siteSerial(urls []string) {
 }
 
 func sitesConcurrent(urls []string) {
-	var wg sync.WaitGroup
+	var wg sync.WaitGroup //initializing a waitGroup; waits for a task to be completed
 
 	for _, url := range urls {
 		wg.Add(1)
