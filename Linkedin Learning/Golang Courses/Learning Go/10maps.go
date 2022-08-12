@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	states := make(map[string]string)
+	states := make(map[string]string) //format for maps: map[key_datatype]value_datatype; eg. map[int]string
 	fmt.Println(states)
 	states["RJ"] = "Rajasthan"
 	states["DL"] = "Delhi"
