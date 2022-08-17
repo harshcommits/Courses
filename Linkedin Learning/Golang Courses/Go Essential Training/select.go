@@ -20,6 +20,6 @@ func main() {
 
 	fmt.Println("-------")
 
-	out := make(chan float64)
+	// out := make(chan float64)
 
 }
