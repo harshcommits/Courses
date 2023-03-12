@@ -1,0 +1,4 @@
+PostgreSQL Commands
+
+#command to copy data from the csv to the postgres db
+\copy sales FROM '/Users/harshjha/Documents/red30-postgres.csv' WITH DELIMITER ',' CSV HEADER;

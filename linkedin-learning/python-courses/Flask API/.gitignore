@@ -1,0 +1,7 @@
+.idea/*
+__pycache__/*
+<<<<<<< HEAD
+env/*
+=======
+env/*
+>>>>>>> dc80752db50601a45f556e88ca72b8db08d0bfce
