@@ -7,5 +7,5 @@ const server = createServer((req, res) => {
 });
 
 server.listen(4343, () => {
-    console.log("Server is running from ECMA syntax")
-})
+    console.log("Server is running from ECMA syntax");
+});
