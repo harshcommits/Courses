@@ -14,7 +14,7 @@ const circle = {
 };
 
 // here, the function circleArea just uses the radius attribute from the circle object via de-structuring
-const circleArea = ({ radius }, { precision = 2 }) => // precision dynamically declared
+const circleArea = ({ radius }, { precision = 2 } = {}) => // precision dynamically declared
     (PI * radius * radius).toFixed(precision);
 
 console.log(
