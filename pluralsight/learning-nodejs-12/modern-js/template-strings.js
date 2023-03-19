@@ -1,0 +1,1 @@
+const html = `<div>${Math.random}</div>`; // template strings are declared in backticks
