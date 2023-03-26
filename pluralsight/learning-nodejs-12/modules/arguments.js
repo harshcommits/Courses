@@ -8,4 +8,8 @@ dynamicArgsFunctions(1, 2, 3, 4);
 // they are; function(exports, module, require, __filename, __dirname)
 // read up on wrapper functions in JS
 
-console.log(arguments);
+// console.log(arguments);
+
+// invoked from require.js
+exports.a = 42;
+module.exports.b = 38;
