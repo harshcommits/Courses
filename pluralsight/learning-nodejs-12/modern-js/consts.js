@@ -11,4 +11,4 @@ const person = {
     lastName: "Doe",
 }
 
-// Object.freeze(); freezes datq for first level
+// Object.freeze(); freezes data for first level
