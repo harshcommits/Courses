@@ -5,7 +5,7 @@ class LLNode:
 
     # dunder repr method; need another reading on dunder methods
     def __repr__(self) -> str:
-        return f"LLNode Object: data {self.data}"
+        return f"LLNode Object: data={self.data}"
 
     def get_data(self):
         """
@@ -47,8 +47,28 @@ class LL:
         #     return False
         return self.head is None # counts as boolean; returns True if empty list, otherwise false
 
-    def add_front(self, data):
-        pass
+    def add_front(self, new_data):
+        """
+        add a node whose data is the new_data to the front of the linked list
+        """
+        temp = LLNode(new_data)
+        temp.set_next(self.head)
+        self.head = temp
 
     def size(self):
+        """
+        traverses linked list and returns int value showing no. of nodes; tim
+        """
+        size = 0
+        if self.head is None:
+            return size
+        
+        current = self.head
+        while current is not None: # self.head becomes none at the end of the list, hence the condition
+            size += 1
+            current = current.get_next()
+
+        return size
+
+    def search(self, data):
         pass
