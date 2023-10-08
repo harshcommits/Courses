@@ -71,4 +71,17 @@ class LL:
         return size
 
     def search(self, data):
+        if self.head is None:
+            return "Empty list"
+        
+        current = self.head
+        while current is not None:
+            if current.get_data() == data:
+                return True
+            else:
+                current = current.get_next()
+
+        return False
+
+    def remove(self, data):
         pass

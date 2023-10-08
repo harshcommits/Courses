@@ -29,9 +29,18 @@ if __name__ == "__main__":
     sll = LL()
     print(sll.size())
 
-    # adding values
+    # # adding values
+    # sll.add_front(1)
+    # sll.add_front(2)
+    # sll.add_front(3)
+
+    # print(sll.size())
+
+    sll.search(3)
     sll.add_front(1)
     sll.add_front(2)
     sll.add_front(3)
 
-    print(sll.size())
+    print(sll.search('bird'))
+    print(sll.search(3))
+
