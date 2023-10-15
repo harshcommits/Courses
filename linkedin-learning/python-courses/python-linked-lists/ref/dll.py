@@ -44,3 +44,15 @@ class DLLNode:
         replace existing self.prev value with new_prev
         """
         self.prev = new_prev 
+
+
+class DLL:
+
+    def __init__(self):
+        self.head = None
+    
+    def __repr__(self):
+        return f"DLL object: head=>{self.head}"
+
+    def is_empty(self):
+        return self.head is None # returns True if list is empty; false if not

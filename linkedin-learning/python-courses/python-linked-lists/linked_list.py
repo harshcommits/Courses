@@ -2,32 +2,8 @@ from ref.ll import LL, LLNode
 
 if __name__ == "__main__":
 
-    # node = DLLNode('apple')
-    # # print(node.get_data())
-
-    # node.set_data(7)
-    # print(node.get_data())
-
-    # node1 = DLLNode('carrot')
-    # node.set_next(node1)
-    # # print(node.get_next())
-
-    # node2 = DLLNode('brocolli')
-    # node1.set_next(node2)
-    # # node2.set_previous(node1)
-    # node2.set_prev(node1)
-    # print(node.get_next())
-    # # print(node2.get_previous())
-    # print(node2.get_prev())
-    # print(node2.get_data())
-
-    # sll = LL()
-    # print(sll.head)
-    # sll.add_front('berry')
-    # print(sll.head)
-
     sll = LL()
-    print(sll.size())
+    # print(sll.size())
 
     # # adding values
     # sll.add_front(1)
@@ -36,11 +12,20 @@ if __name__ == "__main__":
 
     # print(sll.size())
 
-    sll.search(3)
+    # sll.search(3)
     sll.add_front(1)
     sll.add_front(2)
     sll.add_front(3)
+    sll.add_front(27)
 
-    print(sll.search('bird'))
-    print(sll.search(3))
+    # print(sll.search('bird'))
+    # print(sll.search(3))
 
+    # test cases for data removal
+    print(sll.remove(15))
+    print(sll.head)
+    print(sll.remove(27))
+    # print(sll.remove(27))
+
+    print(sll.head)
+    print(sll.head.next)

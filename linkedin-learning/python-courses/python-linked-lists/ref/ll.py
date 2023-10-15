@@ -71,8 +71,11 @@ class LL:
         return size
 
     def search(self, data):
+        """
+        traverses the linked list and returns true if the data is present or not
+        """
         if self.head is None:
-            return "Empty list"
+            return "Empty list; no nodes to search"
         
         current = self.head
         while current is not None:
@@ -84,4 +87,28 @@ class LL:
         return False
 
     def remove(self, data):
-        pass
+        """
+        removes the first occurrence of a node which contains the data value as its self.data value
+        Time complexity is O(n)
+        """
+        if self.head is None:
+            return "Linked LIst is empty; nothing to remove"
+
+        current = self.head
+        prev = None
+        found = False
+
+        while not found:
+            if current.get_data() == data:
+                found = True
+            else:
+                if current.get_next() == None:
+                    return "Node with that data value is not present"
+                else:
+                    prev = current
+                    current = current.get_next()
+
+        if prev is None:
+            self.head = current.get_next()
+        else:
+            prev.set_next(current.get_next())
