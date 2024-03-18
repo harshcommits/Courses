@@ -11,15 +11,15 @@ def runMatch():
 	# match statement starts here .
 	match user:
 		case "Om":
-			print("Om do not have access to the database \
+			print("Om does not have access to the database \
 			only for the api code.")
 		case "Vishal":
 			print(
-				"Vishal do not have access to the database , \
+				"Vishal does not have access to the database , \
 				only for the frontend code.")
 
 		case "Rishabh":
-			print("Rishabh have the access to the database")
+			print("Rishabh has the access to the database")
 			print(provideAccess("Rishabh"))
 
 		case _:
