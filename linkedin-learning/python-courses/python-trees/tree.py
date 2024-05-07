@@ -1,106 +1,84 @@
+'''
+Tree needs to satisfy 3 conditions:
+
+1. Each tree has one root node
+2. Each node can have multiple children
+3. Each node (except root) has one parent
+
+3 ways of traversal; pre-order, in-order and post-order
+
+'''
+
+# need to read about trie
 
 class Node:
     def __init__(self, data):
-        self.data = data
         self.left = None
         self.right = None
+        self.data = data
 
-    #searching the nodes
     def search(self, target):
         if self.data == target:
-            print(f"Found {self.data}")
-            return None
-
-        #check if data is on the left nodes; if yes, search recursively through all left nodes
+            print('Found it')
+            return self
+        
         if self.left and self.data > target:
             return self.left.search(target)
-
-        #check if data is on the right nodes; if yes, search recursively through all right nodes
+        
         if self.right and self.data < target:
             return self.right.search(target)
-
-        print("Data not in tree")
-
-    #traversal methods
-    def traversePreOrder(self):
-        print(self.data)
-        if self.left:
-            self.left.traversePreOrder()
-
-        if self.right:
-            self.right.traversePreOrder()
-
-    def traverseInOrder(self):
-        if self.left:
-            self.left.traverseInOrder()
-
-        print(self.data)
         
-        if self.right:
-            self.right.traverseInOrder()
+        print('Value is not in tree')
 
-    def traversePostOrder(self):
-        if self.left:
-            self.left.traversePostOrder()
-
-        if self.right:
-            self.right.traversePostOrder()
-        
+    def traversePreorder(self):
         print(self.data)
+        if self.left:
+            self.left.traversePreorder()
+        if self.right:
+            self.right.traversePreorder()
 
+    def traversePreorder(self):
+        if self.left:
+            self.left.traversePreorder()
+        print(self.data)
+        if self.right:
+            self.right.traversePreorder()
+
+    def traversePreorder(self):
+        if self.left:
+            self.left.traversePreorder()
+        if self.right:
+            self.right.traversePreorder()
+        print(self.data)
 
 class Tree:
     def __init__(self, root, name=''):
         self.root = root
         self.name = name
 
-    #add another wrapper for search function
-    def search(self, target):
+    def search(self, target):  # allows avoiding mentioning the root keyword for searching data, as was done on line 58
         return self.root.search(target)
 
-    #wrappers for traversal functions
-    def traversePreOrder(self):
-        self.root.traversePreOrder()
 
-    def traverseInOrder(self):
-        self.root.traverseInOrder()
+node = Node(20)
+node.right = Node(25)
+node.left = Node(15)
 
-    def traversePostOrder(self):
-        self.root.traversePostOrder()
+node.left.left = Node(10)
+node.left.right = Node(17)
 
-node = Node(10)
+node.right.left = Node(22)
+node.right.right = Node(30)
 
-node.left = Node(5)
-node.right = Node(15)
+print(node.right.right.data)
+print(node.right.data)
 
-node.left.left = Node(2)
-node.left.right = Node(6)
 
-node.right.left = Node(13)
-node.right.right = Node(23)
-
-myTree = Tree(node, "My tree")
-
-# #print node data
-# print(node.right.data)
-# print(node.right.right.data)
-
-#prints data from myTree instance
-print(myTree.name)
+myTree = Tree(node, 'My Tree')
 print(myTree.root.right.data)
+print(myTree.root.right.right.data)
+print(myTree.name)
 
-#search for a value in tree
-#found = myTree.root.search(23)
-
-#using the search function in the Tree class, instead of the parent Node class
-found = myTree.search(23)
-
-#traverse the tree
-print("Traversing Pre-Order\n")
-myTree.traversePreOrder()
-
-print("Traversing In-Order\n")
-myTree.traverseInOrder()
-
-print("Traversing Post-Order\n")
-myTree.traversePostOrder()
+# found = myTree.root.search(30)
+found = myTree.search(31)
+# print(found.data)     # need to re-visit; returns error in case of value not existing on tree
