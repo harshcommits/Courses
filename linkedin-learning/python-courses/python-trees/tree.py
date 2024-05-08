@@ -37,19 +37,26 @@ class Node:
         if self.right:
             self.right.traversePreorder()
 
-    def traversePreorder(self):
+    def traverseInorder(self):
         if self.left:
             self.left.traversePreorder()
         print(self.data)
         if self.right:
             self.right.traversePreorder()
 
-    def traversePreorder(self):
+    def traversePostorder(self):
         if self.left:
             self.left.traversePreorder()
         if self.right:
             self.right.traversePreorder()
         print(self.data)
+
+    # return the height of a tree
+    def height(self, h=0):
+        leftHeight = self.left.height(h+1) if self.left else h
+        rightHeight = self.right.height(h+1) if self.right else h
+        return max(leftHeight, rightHeight)
+
 
 class Tree:
     def __init__(self, root, name=''):
@@ -58,6 +65,18 @@ class Tree:
 
     def search(self, target):  # allows avoiding mentioning the root keyword for searching data, as was done on line 58
         return self.root.search(target)
+    
+    def traversePreorder(self):
+        self.root.traversePreorder()
+
+    def traverseInorder(self):
+        self.root.traverseInorder()
+
+    def traversePostorder(self):
+        self.root.traversePostorder()
+
+    def height(self):
+        return self.root.height()
 
 
 node = Node(20)
@@ -75,6 +94,7 @@ print(node.right.data)
 
 
 myTree = Tree(node, 'My Tree')
+
 print(myTree.root.right.data)
 print(myTree.root.right.right.data)
 print(myTree.name)
@@ -82,3 +102,11 @@ print(myTree.name)
 # found = myTree.root.search(30)
 found = myTree.search(31)
 # print(found.data)     # need to re-visit; returns error in case of value not existing on tree
+
+print('\nTree traversal in pre-order fashion')
+myTree.traversePreorder()
+
+print('\nTree traversal in in-order fashion')
+myTree.traverseInorder()
+
+print(f"The height of the tree is {myTree.height()}")
