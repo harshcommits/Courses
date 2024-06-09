@@ -92,7 +92,7 @@ class LL:
         Time complexity is O(n)
         """
         if self.head is None:
-            return "Linked LIst is empty; nothing to remove"
+            return "Linked List is empty; nothing to remove"
 
         current = self.head
         prev = None
